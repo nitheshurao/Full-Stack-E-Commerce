@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom'
 import './index.css';
 import HomeScreen from './screens/HomeScreen/HomeScreen';
 import ProducScreen from './screens/ProductScreen/ProducScreen';
+import CartScreen from './screens/CartScreen/CartScreen';
 
 const App = () => {
 
@@ -15,6 +16,8 @@ const App = () => {
       <main className='py-3'>
         <Route path='/' component={HomeScreen} exact />
         <Route path='/product/:id?' component={ProducScreen} />
+
+        <Route path='/cart/:id?' component={CartScreen} />
       </main>
       <Footer />
     </Router >

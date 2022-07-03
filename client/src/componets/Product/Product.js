@@ -11,10 +11,10 @@ export const Product = ({ product }) => {
                     <div> <h6> {product.name}</h6> </div>
                     <div className="Price">
                         <div>
-                            <h>Price:{product.price}</h>
+                            <h1>Price:{product.price}</h1>
                         </div>
                         <div>
-                            <h>Rating:{product.rating}</h>
+                            <h1>Rating:{product.rating}</h1>
                         </div>
                     </div>
                 </Link>
