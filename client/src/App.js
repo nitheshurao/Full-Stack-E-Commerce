@@ -7,6 +7,8 @@ import './index.css';
 import HomeScreen from './screens/HomeScreen/HomeScreen';
 import ProducScreen from './screens/ProductScreen/ProducScreen';
 import CartScreen from './screens/CartScreen/CartScreen';
+import LoginScreen from './screens/LoginScreen/LoginScreen';
+import RegisterScreen from './screens/RegisterScreen/RegisterScreen';
 
 const App = () => {
 
@@ -18,6 +20,9 @@ const App = () => {
         <Route path='/product/:id?' component={ProducScreen} />
 
         <Route path='/cart/:id?' component={CartScreen} />
+        <Route path='/Login' component={LoginScreen} />
+        <Route path='/register' component={RegisterScreen} />
+
       </main>
       <Footer />
     </Router >

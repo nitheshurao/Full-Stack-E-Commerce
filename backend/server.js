@@ -7,6 +7,7 @@ import product from './data/products.js'
 import { notFound, errorHandler } from './middleware/errorMiddleware.js'
 
 import ProductRouters from './routes/ProductRoutes.js'
+import UserRouter from './routes/UserRoutes.js'
 
 
 dotenv.config()
@@ -20,6 +21,7 @@ const app = express()
 app.use(express.json())
 
 app.use('/api/product/', ProductRouters)
+app.use('/api/users/', UserRouter)
 // app.get('/api/product/', (req, res) => {
 //     res.send("API is running--")
 
