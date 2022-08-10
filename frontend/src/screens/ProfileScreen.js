@@ -31,7 +31,7 @@ const ProfileScreen = ({ location, history }) => {
 
   useEffect(() => {
     if (!userInfo) {
-      history.push('/login')
+      // history.push('/login')
     } else {
       if (!user || !user.name || success) {
         dispatch({ type: USER_UPDATE_PROFILE_RESET })
@@ -58,7 +58,7 @@ const ProfileScreen = ({ location, history }) => {
       <Col md={3}>
         <h2>User Profile</h2>
         {message && <Message variant='danger'>{message}</Message>}
-        {}
+        { }
         {success && <Message variant='success'>Profile Updated</Message>}
         {loading ? (
           <Loader />
