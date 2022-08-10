@@ -15,6 +15,7 @@ import {
 export const listProducts = () => async (dispatch) => {
     try {
         dispatch({ type: PRODUCT_LIST_REQUEST })
+        // http://localhost:5000/api/product/
         const { data } = await axios.get('http://localhost:5000/api/product/')
         dispatch({
             type: PRODUCT_LIST_SUCCESS,
